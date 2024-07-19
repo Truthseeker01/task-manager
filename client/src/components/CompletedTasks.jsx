@@ -1,18 +1,17 @@
-import Sidebar from "./Sidebar";
-import Navbar from "./Navbar";
+import Task from "./Task";
 
 const CompletedTasks = () => {
 
     return  (
-        <div className="container">
-                <div className="row row.cols-2">
-                    <div className="col-3"><Sidebar /></div>
-                    <div className="col-9">
-                        <div className="row"><Navbar /></div>
-                        <div className="row">CompletedTasks</div>
-                    </div>
-                </div>
-            </div>
+        <div className="outlet">
+            CompletedTasks
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+        </div>
     )
 }
 

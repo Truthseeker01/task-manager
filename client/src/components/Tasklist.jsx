@@ -3,29 +3,30 @@ import Task from "./Task";
 const Tasklist = () => {
 
     return (
-        <table className="table">
-            <thead>
-                <tr className="text-center">
-                    <th>Task</th>
-                    <th>Deadline</th>
-                    <th>Priority</th>
-                    <th>Status</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
+        <div className="outlet tasklist">
+            <h3>Active Tasks</h3>
+            {/* <div id="tasklist_header">
+                <div>Task Name</div>
+                <span>DeadLine</span>
+                <span>Status</span>
+                <div>Action</div>
+            </div> */}
+            <div style={{flex: '1',
+                display: 'flex',
+                flexDirection: 'column'
+            }}>
                 <Task />
                 <Task />
                 <Task />
                 <Task />
                 <Task />
                 <Task />
-                <Task />
-                <Task />
-                <Task />
-                <Task />
-            </tbody>
-        </table>
+            </div>
+            <form>Add a new task
+                <input type="text" />
+                <input type="text" />
+            </form>
+        </div>
     )
 }
 

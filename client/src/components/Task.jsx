@@ -3,16 +3,15 @@
 const Task = () => {
 
     return (
-        <tr className="text-center">
-            <td>Sample</td>
-            <td>08/12/2024</td>
-            <td>High</td>
-            <td>In progress</td>
-            <td>
-                <button className="btn">Delete</button>
-                <button className="btn">Complete</button>
-            </td>
-        </tr>
+        <div className="task">
+            <div>PTM</div>
+            <span>29/06/2024</span>
+            <span>In progress</span>
+            <div className="task_btns">
+                <button>Complete</button>
+                <button>Delete</button>
+            </div>
+        </div>
     )
 }
 

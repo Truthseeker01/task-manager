@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+#root{
+    width: 80%;
+    height: 80%;
+}
+
+.app{
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    color: white;
+}
+
+.app{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    'side nav nav nav'
+    'side main main main'
+    'side main main main'
+    'side main main main'
+    'side main main main'
+    'side main main main'
+    'side main main main'
+    'side main main main'
+    'side main main main'
+    'side main main main'
+    'side main main main';
+}
+
+.sidebar{
+    grid-area: side;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sideheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.sideheader img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.sideheader p{
+    flex: 1;
+}
+.sidemain span{
+    font-size: small;
+}
+.sidemain{
+    flex: 1;
+}
+
+.sidefooter{
+    margin-bottom: 10px;
+}
+
+.navbar{
+    grid-area: nav;
+    height: 70px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.navlink.active{
+    color: greenyellow;
+}
+
+.app div{
+    grid-area: main;
+    /* border: 1px solid white; */
+}
+
+.tasklist{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10pxpx;
+}
+.tasklist h3{
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+.tasklist .task{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.tasklist form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.task_btns{
+    gap: 5px;
+}
